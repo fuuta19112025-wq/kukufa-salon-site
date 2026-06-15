@@ -1,65 +1,189 @@
-body {
-  margin: 0;
-  font-family: "Noto Serif JP", serif;
-  background: #f7f6f3;
-  color: #333;
-  line-height: 1.8;
-}
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>くくふぁ～巡る～｜女性専用プライベートサロン</title>
 
-.hero {
-  text-align: center;
-  padding: 50px 20px;
-  background: #e6e1d8;
-}
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
 
-nav {
-  display: flex;
-  justify-content: space-around;
-  background: #fff;
-  padding: 10px;
-  border-bottom: 1px solid #eee;
-}
+<body>
 
-nav a {
-  font-size: 12px;
-  text-decoration: none;
-  color: #5a6a5a;
-}
+<header class="hero">
+  <div class="hero-inner">
+    <h1>くくふぁ～巡る～</h1>
+    <p>身体も心も軽やかに</p>
+  </div>
+</header>
 
-.box {
-  background: #fff;
-  margin: 15px;
-  padding: 18px;
-  border-radius: 12px;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-}
+<nav>
+  <a href="#about">サロン紹介</a>
+  <a href="#menu">施術メニュー</a>
+  <a href="#faq">FAQ</a>
+</nav>
 
-.grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 10px;
-}
+<main>
 
-.card2 img {
-  width: 100%;
-  border-radius: 10px;
-}
+<!-- サロン紹介 -->
+<section id="about" class="box">
+  <h2>サロン紹介</h2>
 
-.card2 p {
-  text-align: center;
-  font-size: 12px;
-}
+  <p>
+    くくふぁ～巡る～ は、古代道教に伝わる内臓デトックス療法「チネイザン」と、
+    植物の恵みを活かした「アロマトリートメント」を提供する、完全予約制・女性専用のプライベートサロンです。
+  </p>
 
-details {
-  background: #f2f0ec;
-  padding: 10px;
-  margin: 10px 0;
-  border-radius: 8px;
-}
+  <p>
+    忙しい毎日の中で知らず知らずのうちに溜め込んだ心身の緊張や疲れを、
+    深い呼吸とやさしいタッチでゆるめ、本来の健やかな巡りへと導きます。
+  </p>
 
-footer {
-  text-align: center;
-  font-size: 12px;
-  padding: 20px;
-  color: #777;
-}
+  <p>
+    お腹から心と身体を整えるチネイザン、植物の香りに包まれるアロマトリートメントを通して、
+    心身のバランスを整え、本来のご自身らしさと健康を取り戻すお手伝いをいたします。
+  </p>
+
+  <p>
+    誰の目も気にせず、ただ自分自身と向き合う時間。
+  </p>
+
+  <p>
+    小さな隠れ家のような空間で、ほっと力を抜き、心も身体も軽やかになるひとときをお過ごしください。
+  </p>
+</section>
+
+<!-- 施術メニュー -->
+<section id="menu" class="box">
+  <h2>施術メニュー</h2>
+
+  <div class="grid">
+
+    <div class="card">
+      <img src="chin.png" alt="チネイザン">
+      <h3>チネイザン</h3>
+      <p>お腹へのやさしいタッチを中心に行うホリスティックな腹部トリートメントです。</p>
+      <p>75分 8,000円</p>
+      <p>90分 9,500円</p>
+    </div>
+
+    <div class="card">
+      <img src="aroma.png" alt="アロマトリートメント">
+      <h3>アロマトリートメント</h3>
+      <p>植物の恵みを活かし、全身の緊張をゆるめるトリートメントです。</p>
+      <p>70分 8,500円</p>
+      <p>90分 10,900円</p>
+      <p>120分 14,500円</p>
+    </div>
+
+    <div class="card">
+      <img src="foot.png" alt="フットリフレクソロジー">
+      <h3>フットリフレクソロジー</h3>
+      <p>足裏の反射区を刺激し、全身の巡りを整えます。</p>
+      <p>30分 3,600円</p>
+      <p>60分 6,700円</p>
+    </div>
+
+    <div class="card">
+      <img src="head.png" alt="アイ＆ヘッドケア">
+      <h3>アイ＆ヘッドケア</h3>
+      <p>目・頭の疲れをやさしくケアする施術です。</p>
+      <p>30分 3,520円</p>
+    </div>
+
+    <div class="card">
+      <img src="body.png" alt="ボディケア">
+      <h3>ボディケア</h3>
+      <p>全身のコリをゆるめるリラクゼーションケアです。</p>
+      <p>30分〜 3,600円〜</p>
+      <p>60分 6,900円〜</p>
+      <p>延長10分 1,200円</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- FAQ（原文維持） -->
+<section id="faq" class="box">
+  <h2>よくあるご質問</h2>
+
+  <details>
+    <summary>Q. チネイザンとはどのような施術ですか？</summary>
+    <p>
+      A. チネイザンは、お腹へのやさしいタッチを中心に行うホリスティックな腹部トリートメントです。
+      タイに伝わる内臓デトックスセラピーで、「氣内臓デトックス」とも呼ばれています。
+    </p>
+    <p>
+      内臓に直接働きかけることで、お腹の滞りを整えるだけでなく、
+      感情のバランスにもアプローチし、本来の生命力や自然治癒力を高めることを目的としています。
+    </p>
+  </details>
+
+  <details>
+    <summary>Q. アロマトリートメントとチネイザンの違いは何ですか？</summary>
+    <p>
+      A. アロマトリートメントは、全身の緊張をゆるめ、リンパの流れを促しながら心身をリラックスへ導く施術です。
+    </p>
+    <p>
+      一方、チネイザンはお腹（内臓）へのアプローチを中心とし、
+      身体だけでなく感情の解放や心身のバランスを整えることに特化した施術です。
+    </p>
+  </details>
+
+  <details>
+    <summary>Q. 施術を受けられない場合はありますか？</summary>
+    <p>
+      妊娠中の方、現在重い病気で治療中の方、腹部内の臓器に炎症がある方、
+      お腹の手術後半年以内の方は施術をお受けいただけません。
+    </p>
+    <p>
+      ご不安な場合は事前にご相談ください。
+    </p>
+  </details>
+
+  <details>
+    <summary>Q. 生理中や妊娠中でも施術は受けられますか？</summary>
+    <p>
+      妊娠中の方につきましては、安全面を考慮し、すべてのメニューの施術をお断りしております。
+    </p>
+    <p>
+      生理中はお腹をあまり刺激しない方がよいとされているため、チネイザンはお控えください。
+    </p>
+  </details>
+
+  <details>
+    <summary>Q. 施術後はどのような変化がありますか？</summary>
+    <p>
+      個人差はありますが、
+    </p>
+    <p>
+      ・お腹がすっきり軽く感じる<br>
+      ・睡眠の質が向上する<br>
+      ・お通じがスムーズになる<br>
+      ・呼吸が深くなる<br>
+      ・身体の緊張がゆるむ
+    </p>
+    <p>
+      などの変化を感じられる方が多くいらっしゃいます。
+    </p>
+  </details>
+
+  <details>
+    <summary>Q. 支払い方法は何がありますか？</summary>
+    <p>
+      現在は現金のみのお取り扱いとなります。
+      クレジットカード決済につきましては、現在準備中です。
+    </p>
+  </details>
+
+</section>
+
+</main>
+
+<footer>
+  <p>© くくふぁ～巡る～</p>
+</footer>
+
+</body>
+</html>
