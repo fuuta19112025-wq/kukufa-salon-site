@@ -84,3 +84,9 @@ footer {
   padding: 20px;
   color: #777;
 }
+.card img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+}
