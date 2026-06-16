@@ -7,9 +7,7 @@ body {
 }
 
 .hero {
-  text-align: center;
-  padding: 60px 20px;
-  background: #e6e1d8;
+  background: url("hero.jpg") center center / cover no-repeat;
 }
 
 .hero h1 {
@@ -107,4 +105,22 @@ main {
 main {
   max-width: 900px;
   margin: 0 auto;
+}
+.hero-logo {
+  width: 320px;
+  max-width: 80%;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.hero-copy {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+  color: #555;
+}
+
+.hero-text {
+  max-width: 420px;
+  line-height: 1.8;
+  color: #666;
 }
