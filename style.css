@@ -104,3 +104,7 @@ main {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+main {
+  max-width: 900px;
+  margin: 0 auto;
+}
