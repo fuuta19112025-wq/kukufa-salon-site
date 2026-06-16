@@ -130,3 +130,26 @@ main {
   line-height: 1.8;
   color: #666;
 }
+.hero-inner {
+  max-width: 500px;
+  padding: 20px;
+}
+
+.hero-logo {
+  width: 280px;
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.hero-copy {
+  font-size: 1.4rem;
+  margin-top: 15px;
+  color: #444;
+}
+
+.hero-text {
+  font-size: 1rem;
+  color: #555;
+  max-width: 400px;
+}
