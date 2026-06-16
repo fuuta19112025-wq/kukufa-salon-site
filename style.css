@@ -128,7 +128,10 @@ main {
 .hero-text {
   max-width: 420px;
   line-height: 1.8;
-  color: #666;
+  .hero-text {
+  color: #4b4b4b;
+  line-height: 1.9;
+}
 }
 .hero-inner {
   max-width: 500px;
@@ -136,7 +139,7 @@ main {
 }
 
 .hero-logo {
-  width: 280px;
+  width: 220px;
   max-width: 100%;
   height: auto;
   display: block;
