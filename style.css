@@ -8,6 +8,12 @@ body {
 
 .hero {
   background: url("hero.jpg") center center / cover no-repeat;
+  min-height: 70vh;
+
+  display: flex;
+  align-items: center;
+
+  padding: 40px;
 }
 
 .hero h1 {
