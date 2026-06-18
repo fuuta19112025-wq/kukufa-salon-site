@@ -135,7 +135,7 @@ main {
 }
 .hero-inner {
   max-width: 500px;
-  padding: 20px;
+  padding: 0px;
 }
 
 .hero-logo {
