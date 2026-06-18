@@ -1,195 +1,126 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300;400;500&display=swap');
-
 body {
   margin: 0;
-  font-family: "Noto Serif JP", "Hiragino Kaku Gothic ProN", "Meiryo", serif;
-  background: #fbfaf8;
-  color: #3a3a3a;
-  line-height: 1.9;
-  letter-spacing: 0.02em;
+  font-family: "Noto Serif JP", serif;
+  background: #f7f6f3;
+  color: #333;
+  line-height: 1.8;
 }
 
-/* ===== HERO ===== */
 .hero {
-  background: linear-gradient(180deg, #d9cfc4 0%, #f3eee9 100%);
-  padding: 60px 20px 40px;
-  text-align: center;
+  background: url("hero.jpg") center center / cover no-repeat;
+  min-height: 70vh;
+  display: flex;
+  align-items: flex-start;
+  padding: 40px;
 }
 
 .hero-inner {
-  max-width: 900px;
-  margin: 0 auto;
+  max-width: 500px;
 }
 
 .hero-logo {
-  max-width: 140px;
-  margin-bottom: 18px;
+  width: 160px;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 20px;
 }
 
 .hero-copy {
-  font-size: 1.3rem;
-  margin: 0;
-  font-weight: 400;
+  font-size: 1.4rem;
+  margin-top: 15px;
+  color: #444;
 }
 
 .hero-text {
-  margin-top: 12px;
-  font-size: 0.95rem;
+  font-size: 1rem;
   color: #555;
+  line-height: 1.9;
+  max-width: 400px;
 }
 
-/* ===== NAV ===== */
 nav {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 14px;
-  padding: 14px 10px;
+  justify-content: space-around;
   background: #fff;
+  padding: 12px;
   border-bottom: 1px solid #eee;
-  position: sticky;
-  top: 0;
-  z-index: 10;
 }
 
 nav a {
+  font-size: 12px;
   text-decoration: none;
-  color: #5a5a5a;
-  font-size: 0.9rem;
-  padding: 6px 10px;
-  border-radius: 20px;
-  transition: 0.3s;
-}
-
-nav a:hover {
-  background: #f3eee9;
-}
-
-/* ===== MAIN BOX ===== */
-main {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 30px 18px 80px;
+  color: #5a6a5a;
 }
 
 .box {
   background: #fff;
-  margin-bottom: 24px;
-  padding: 22px;
-  border-radius: 14px;
-  box-shadow: 0 6px 20px rgba(0,0,0,0.05);
-}
-
-/* ===== TITLE ===== */
-h2 {
-  margin-top: 0;
-  font-size: 1.2rem;
-  font-weight: 500;
-  border-left: 4px solid #d9cfc4;
-  padding-left: 10px;
-}
-
-/* ===== TEXT ===== */
-p {
-  margin: 10px 0;
-}
-
-/* ===== MENU GRID ===== */
-.grid {
-  margin-top: 10px;
-}
-
-.menu-note {
-  font-size: 0.85rem;
-  color: #777;
-  margin-top: 10px;
-}
-
-/* メニューカード */
-.card {
-  margin-top: 18px;
-  background: #faf7f4;
-  padding: 16px;
+  margin: 15px;
+  padding: 18px;
   border-radius: 12px;
-  text-align: center;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+}
+
+.card {
+  background: #fff;
+  padding: 12px;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
 }
 
 .card img {
   width: 100%;
+  height: 220px;
+  object-fit: cover;
   border-radius: 10px;
-  margin-bottom: 10px;
 }
 
-/* ===== FAQ ===== */
 details {
-  background: #fafafa;
-  padding: 12px;
-  border-radius: 10px;
-  margin-bottom: 10px;
-  border: 1px solid #eee;
+  background: #f2f0ec;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 8px;
 }
 
-summary {
-  cursor: pointer;
-  font-weight: 500;
+main {
+  max-width: 900px;
+  margin: 0 auto;
 }
 
-/* ===== ACCESS ===== */
-#access p {
-  margin: 8px 0;
-}
-
-/* ===== RESERVE BUTTON ===== */
-.reserve-btn {
-  position: fixed;
-  right: 16px;
-  bottom: 16px;
-  background: #bfae9f;
-  color: #fff;
-  padding: 14px 18px;
-  border-radius: 40px;
-  text-decoration: none;
-  font-size: 0.9rem;
-  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
-  transition: 0.3s;
-}
-
-.reserve-btn:hover {
-  background: #a99688;
-}
-
-/* ===== FOOTER ===== */
 footer {
   text-align: center;
-  padding: 40px 20px;
-  font-size: 0.85rem;
+  font-size: 12px;
+  padding: 20px;
   color: #777;
-  background: #fff;
-  border-top: 1px solid #eee;
 }
 
-footer a {
-  color: #5a5a5a;
-  text-decoration: none;
+img {
+  max-width: 100%;
+  height: auto;
 }
 
-/* ===== MOBILE ===== */
-@media (max-width: 600px) {
+@media (max-width: 767px) {
+  .hero {
+    min-height: 55vh;
+    background-position: right center;
+    padding: 15px;
+  }
+
   .hero-copy {
     font-size: 1.1rem;
   }
 
-  .box {
-    padding: 18px;
+  .hero-text {
+    font-size: 0.9rem;
   }
 
-  nav {
-    font-size: 0.85rem;
-  }
-
-  .reserve-btn {
-    width: calc(100% - 32px);
-    text-align: center;
-    right: 16px;
+  .hero-logo {
+    width: 140px;
   }
 }
