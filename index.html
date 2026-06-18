@@ -1,205 +1,127 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>くくふぁ～巡る～｜女性専用プライベートサロン</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>くくふぁ</title>
 
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300;400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: "Hiragino Kaku Gothic ProN", "Meiryo", sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background: #fafafa;
+    }
+
+    header {
+      background: #d9cfc4;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+      letter-spacing: 2px;
+    }
+
+    header p {
+      margin-top: 10px;
+      font-size: 0.95rem;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 30px 20px;
+    }
+
+    section {
+      margin-bottom: 40px;
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+    }
+
+    h2 {
+      border-left: 4px solid #d9cfc4;
+      padding-left: 10px;
+      font-size: 1.2rem;
+      margin-top: 0;
+    }
+
+    .info p {
+      margin: 6px 0;
+    }
+
+    .highlight {
+      background: #f3eee9;
+      padding: 10px;
+      border-radius: 8px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.85rem;
+      color: #777;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.5rem;
+      }
+    }
+  </style>
 </head>
 
 <body>
 
-<header class="hero">
-  <div class="hero-inner">
+  <header>
+    <h1>くくふぁ</h1>
+    <p>静かに整う、小さな時間</p>
+  </header>
 
-    <img src="kukufa-logo.png"
-         alt="くくふぁ～巡る～"
-         class="hero-logo">
+  <div class="container">
 
-  <p class="hero-copy">
-  心も身体も軽やかに
-</p>
+    <section>
+      <h2>お知らせ</h2>
+      <p class="highlight">
+        日々の疲れをゆるめる、静かな時間を大切にしています。
+      </p>
+    </section>
 
-<p class="hero-text">
-  チネイザンとアロマで、<br>
-  本来の巡りを取り戻す時間を
-</p>  
+    <section>
+      <h2>営業時間</h2>
+      <div class="info">
+        <p>月・水・木・金曜日　10:00〜19:00</p>
+        <p>土・日曜日　　　　　10:00〜18:00</p>
+        <p>定休日：火曜日</p>
+      </div>
+    </section>
 
-  </div>
-</header>
+    <section>
+      <h2>ご予約・お問い合わせ</h2>
+      <div class="info">
+        <p>電話：070-9075-2880</p>
+        <p>メール：cucufa.meguru@gmail.com</p>
+      </div>
+    </section>
 
-<nav>
-  <a href="#about">サロン紹介</a>
-  <a href="#menu">施術メニュー</a>
-  <a href="#therapist">セラピスト</a>
-  <a href="#access">アクセス</a>
-  <a href="#faq">FAQ</a>
-</nav>
-
-<main>
-
-<!-- サロン紹介 -->
-<section id="about" class="box">
-  <h2>サロン紹介</h2>
-
-  <p>
-    くくふぁ～巡る～ は、古代道教に伝わる内臓デトックス療法「チネイザン」と、
-    植物の恵みを活かした「アロマトリートメント」を提供する、完全予約制・女性専用のプライベートサロンです。
-  </p>
-
-  <p>
-    忙しい毎日の中で知らず知らずのうちに溜め込んだ心身の緊張や疲れを、
-    深い呼吸とやさしいタッチでゆるめ、本来の健やかな巡りへと導きます。
-  </p>
-
-  <p>
-    お腹から心と身体を整えるチネイザン、植物の香りに包まれるアロマトリートメントを通して、
-    心身のバランスを整え、本来のご自身らしさと健康を取り戻すお手伝いをいたします。
-  </p>
-
-  <p>
-    誰の目も気にせず、ただ自分自身と向き合う時間。
-  </p>
-
-  <p>
-    小さな隠れ家のような空間で、ほっと力を抜き、心も身体も軽やかになるひとときをお過ごしください。
-  </p>
-</section>
-
-<!-- 施術メニュー -->
-<section id="menu" class="box">
-  <h2>施術メニュー</h2>
-
-  <div class="grid">
-
-    <p>70分 8,500円</p>
-    <p>90分 10,900円</p>
-    <p>120分 14,500円</p>
-
-    <p class="menu-note">
-      ※90分・120分はそれぞれ、お時間内でご希望によりチネイザンShortもご利用いただけます。
-    </p>
+    <section>
+      <h2>コンセプト</h2>
+      <p>
+        なんでもない日を、少しだけ整える場所。<br/>
+        香りと静けさの中で、自分に戻る時間を。
+      </p>
+    </section>
 
   </div>
 
-  <div class="card">
-    <img src="foot.jpg" alt="フットリフレクソロジー">
-    <h3>フットリフレクソロジー</h3>
-    <p>足裏の反射区を刺激し、全身の巡りを整えます。</p>
-    <p>30分 3,600円</p>
-    <p>60分 7,000円</p>
-  </div>
-
-</section>
-
-<!-- FAQ -->
-<section id="faq" class="box">
-  <h2>よくあるご質問</h2>
-
-  <details>
-    <summary>Q. チネイザンとはどのような施術ですか？</summary>
-    <p>
-      A. チネイザンは、お腹へのやさしいタッチを中心に行うホリスティックな腹部トリートメントです。
-      タイに伝わる内臓デトックスセラピーで、「氣内臓デトックス」とも呼ばれています。
-    </p>
-    <p>
-      内臓に直接働きかけることで、お腹の滞りを整えるだけでなく、
-      感情のバランスにもアプローチし、本来の生命力や自然治癒力を高めることを目的としています。
-    </p>
-  </details>
-
-  <details>
-    <summary>Q. アロマトリートメントとチネイザンの違いは何ですか？</summary>
-    <p>
-      A. アロマトリートメントは、全身の緊張をゆるめ、リンパの流れを促しながら心身をリラックスへ導く施術です。
-    </p>
-    <p>
-      一方、チネイザンはお腹（内臓）へのアプローチを中心とし、
-      身体だけでなく感情の解放や心身のバランスを整えることに特化した施術です。
-    </p>
-  </details>
-
-  <details>
-    <summary>Q. 施術を受けられない場合はありますか？</summary>
-    <p>
-      妊娠中の方、現在重い病気で治療中の方、腹部内の臓器に炎症がある方、
-      お腹の手術後半年以内の方は施術をお受けいただけません。
-    </p>
-    <p>
-      ご不安な場合は事前にご相談ください。
-    </p>
-  </details>
-
-  <details>
-    <summary>Q. 生理中や妊娠中でも施術は受けられますか？</summary>
-    <p>
-      妊娠中の方につきましては、安全面を考慮し、すべてのメニューの施術をお断りしております。
-    </p>
-    <p>
-      生理中はお腹をあまり刺激しない方がよいとされているため、チネイザンはお控えください。
-    </p>
-  </details>
-
-  <details>
-    <summary>Q. 施術後はどのような変化がありますか？</summary>
-    <p>
-      ・お腹がすっきり軽く感じる<br>
-      ・睡眠の質が向上する<br>
-      ・お通じがスムーズになる<br>
-      ・呼吸が深くなる<br>
-      ・身体の緊張がゆるむ
-    </p>
-  </details>
-
-  <details>
-    <summary>Q. 支払い方法は何がありますか？</summary>
-    <p>
-      現在は現金のみのお取り扱いとなります。
-    </p>
-  </details>
-
-</section>
-<section id="access" class="box">
-
-<h2>アクセス</h2>
-
-<p>横須賀中央駅 徒歩3分</p>
-
-<p>
-施術は落ち着いたマンションの一室で行っております。
-</p>
-
-<p>
-詳細住所はご予約確定後にご案内いたします。
-</p>
-
-<p>
-※専用駐車場はございません。
-近隣のコインパーキングをご利用ください。
-</p>
-
-</section>
-</main>
-
-<!-- 予約ボタン（正しい位置） -->
-<a class="reserve-btn" href="#">
-ご予約はこちら
-</a>
-
-<!-- フッターは1つだけ -->
-<footer>
-  <h3>ご予約・お問い合わせ</h3>
-
-  <p>📞 <a href="tel:07090752880">070-9075-2880</a></p>
-
-  <p>✉️ <a href="mailto:cucufa.meguru@gmail.com">cucufa.meguru@gmail.com</a></p>
-
-  <p>完全予約制・女性専用</p>
-
-  <p>© くくふぁ～巡る～</p>
-</footer>
+  <footer>
+    © くくふぁ
+  </footer>
 
 </body>
 </html>
