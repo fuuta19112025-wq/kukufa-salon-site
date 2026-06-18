@@ -33,28 +33,37 @@ a:hover {
 /* ==========================================
    2. ヘッダー（ヒーローエリア）
    ========================================== */
+/* ーーー ここから書き換え ーーー */
+
+/* ーーー ここから書き換え ーーー */
+
 .hero {
-  background-color: #f4ede4; /* 白檀や薄香をイメージした上品な淡いベージュ */
-  padding: 80px 20px;
-  text-align: center;
+  /* 背景画像を設定 */
+  background-image: linear-gradient(rgba(244, 237, 228, 0.75), rgba(244, 237, 228, 0.75)), url('hero-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 120px 20px; /* 左寄せに合わせて上下の余白を少しゆったりに */
   border-bottom: 1px solid #e6ded4;
 }
 
 .hero-inner {
-  max-width: 800px;
-  margin: 0 auto;
+  max-width: 800px;  /* 下のコンテンツ（.box）と同じ幅に設定 */
+  margin: 0 auto;    /* 画面の真ん中に配置 */
+  text-align: left;  /* 🔴 中身のロゴや文章をすべて左寄せにする */
 }
 
 .hero-logo {
   max-width: 220px;
-  margin-bottom: 30px;
+  margin-bottom: 35px;
+  display: block;    /* 左寄せを確実にする設定 */
 }
 
 .hero-copy {
   font-size: 1.4rem;
   font-weight: 400;
   color: #615547;
-  margin-bottom: 15px;
+  margin-bottom: 18px;
   letter-spacing: 0.2em;
 }
 
@@ -64,6 +73,7 @@ a:hover {
   line-height: 2;
 }
 
+/* ーーー ここまで書き換え ーーー */
 /* ==========================================
    3. ナビゲーション
    ========================================== */
@@ -151,7 +161,7 @@ p {
    5. 各セクションの個別スタイル
    ========================================== */
 
-/* サロン紹介 */
+/* --- サロン紹介 --- */
 #about p {
   text-align: justify;
 }
@@ -159,62 +169,185 @@ p {
   margin-bottom: 0;
 }
 
-/* 施術メニュー */
-.grid {
+/* --- 施術メニュー（画像対応） --- */
+.menu-category {
+  margin-bottom: 40px;
   background-color: #fdfcfb;
   border: 1px solid #efeae4;
   padding: 30px;
-  margin-bottom: 40px;
   border-radius: 4px;
-  text-align: center;
+  display: flex;
+  gap: 30px;
+  align-items: flex-start;
 }
 
-.grid p {
-  font-size: 1.1rem;
+.menu-category:last-child {
+  margin-bottom: 0;
+}
+
+.menu-img-wrapper {
+  flex: 0 0 200px; /* 画像の横幅を200pxに固定 */
+}
+
+.menu-img-wrapper img {
+  width: 100%;
+  height: 150px; /* 高さを150pxに統一 */
+  object-fit: cover;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(125, 107, 88, 0.05);
+}
+
+.menu-content-wrapper {
+  flex: 1;
+}
+
+.menu-category h3 {
+  font-size: 1.15rem;
+  font-weight: 500;
+  color: #51463b;
+  margin-bottom: 5px;
+}
+
+.menu-desc {
+  font-size: 0.85rem;
+  color: #8c8275;
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+.menu-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px dashed #efeae4;
+  font-size: 0.95rem;
+}
+
+.menu-item:last-of-type {
+  border-bottom: none;
+}
+
+.menu-item.extension {
+  border-top: 1px solid #efeae4;
+  margin-top: 5px;
+  font-size: 0.9rem;
+  color: #7d6b58;
+}
+
+.menu-name {
+  font-weight: 400;
+}
+
+.menu-name small {
+  font-size: 0.8rem;
+  color: #8c8275;
+}
+
+.menu-price {
+  font-weight: 500;
+  color: #51463b;
+}
+
+/* アロマトリートメント等の補足文 */
+.menu-category .menu-note {
+  font-size: 0.82rem;
+  color: #8c8275;
+  margin-top: 15px;
+  margin-bottom: 0;
+  border-top: 1px dashed #efeae4;
+  padding-top: 12px;
+  line-height: 1.6;
+}
+
+/* --- セラピスト紹介（メニュー画像とサイズ統一） --- */
+.therapist-profile {
+  display: flex;
+  gap: 30px;
+  align-items: flex-start;
+}
+
+.therapist-img-wrapper {
+  flex: 0 0 200px; /* メニュー画像と同じ200pxに固定 */
+}
+
+.therapist-img {
+  width: 100%;
+  height: 150px; /* メニュー画像と同じ150pxに固定 */
+  object-fit: cover; /* 歪まないように切り抜き */
+  border-radius: 4px;
+  box-shadow: 0 4px 15px rgba(125, 107, 88, 0.08);
+}
+
+.therapist-content {
+  flex: 1;
+}
+
+.therapist-name {
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: #51463b;
+  margin-bottom: 25px;
+  position: relative;
+  display: inline-block;
+}
+
+.therapist-name::after {
+  content: '';
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+  width: 30px;
+  height: 1px;
+  background-color: #c2b4a4;
+}
+
+.therapist-content p {
+  font-size: 0.95rem;
+  line-height: 1.8;
+  margin-bottom: 18px;
+  text-align: justify;
+}
+
+.qualifications {
+  margin-top: 35px;
+  padding-top: 25px;
+  border-top: 1px dashed #efeae4;
+}
+
+.qualifications h4 {
+  font-size: 0.95rem;
   font-weight: 500;
   color: #51463b;
   margin-bottom: 12px;
 }
 
-.grid .menu-note {
-  font-size: 0.85rem;
-  color: #8c8275;
-  margin-top: 20px;
-  margin-bottom: 0;
-  border-top: 1px dashed #e6ded4;
-  padding-top: 15px;
+.qualifications ul {
+  list-style: none;
+  padding-left: 0;
 }
 
-/* フットケアカード */
-.card {
-  border: 1px solid #efeae4;
-  border-radius: 4px;
-  overflow: hidden;
-  background-color: #ffffff;
+.qualifications li {
+  font-size: 0.9rem;
+  color: #615547;
+  margin-bottom: 8px;
+  position: relative;
+  padding-left: 15px;
+}
+
+.qualifications li::before {
+  content: '・';
+  position: absolute;
+  left: 0;
+  color: #c2b4a4;
+}
+
+/* --- アクセス --- */
+#access {
   text-align: center;
-  padding-bottom: 25px;
 }
 
-.card img {
-  width: 100%;
-  height: 240px;
-  object-fit: cover; /* 画像を綺麗に枠に収める */
-  margin-bottom: 20px;
-}
-
-.card h3 {
-  font-size: 1.2rem;
-  font-weight: 400;
-  color: #51463b;
-  margin-bottom: 15px;
-}
-
-.card p {
-  padding: 0 20px;
-  margin-bottom: 10px;
-}
-
-/* FAQ（アコーディオンメニュー） */
+/* --- FAQ（アコーディオン） --- */
 details {
   border-bottom: 1px solid #efeae4;
   padding: 15px 0;
@@ -230,11 +363,11 @@ summary {
   padding: 10px 0;
   outline: none;
   color: #51463b;
-  list-style: none; /* デフォルトの矢印を隠す（ブラウザ用） */
+  list-style: none;
 }
 
 summary::-webkit-details-marker {
-  display: none; /* サファリ用矢印隠し */
+  display: none;
 }
 
 summary::before {
@@ -255,11 +388,6 @@ details p {
   color: #5a544e;
 }
 
-/* アクセス */
-#access {
-  text-align: center;
-}
-
 /* ==========================================
    6. 予約ボタン（画面下部固定）
    ========================================== */
@@ -271,7 +399,7 @@ details p {
   transform: translateX(-50%);
   width: 90%;
   max-width: 340px;
-  background-color: #7d6b58; /* 落ち着いたアンバー・ブラウン */
+  background-color: #7d6b58;
   color: #ffffff;
   text-align: center;
   padding: 16px 0;
@@ -295,7 +423,7 @@ details p {
 footer {
   background-color: #f4ede4;
   text-align: center;
-  padding: 60px 20px 120px; /* ボタンが被らないよう下部を広めに */
+  padding: 60px 20px 120px;
   font-size: 0.9rem;
   border-top: 1px solid #e6ded4;
 }
@@ -317,8 +445,48 @@ footer a {
 }
 
 /* ==========================================
-   8. スマホ・レスポンシブ対応
+   8. レスポンシブ対応（スマホ表示）
    ========================================== */
+@media (max-width: 768px) {
+  .therapist-profile {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  .therapist-img-wrapper {
+    width: 100%;
+  }
+  .therapist-img {
+    height: 180px; /* スマホでは少し高さを出す */
+  }
+  .therapist-name {
+    display: block;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .therapist-name::after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+@media (max-width: 680px) {
+  .menu-category {
+    flex-direction: column;
+    padding: 20px 15px;
+    gap: 20px;
+  }
+  .menu-img-wrapper {
+    width: 100%;
+  }
+  .menu-img-wrapper img {
+    height: 180px;
+  }
+  .menu-item {
+    font-size: 0.9rem;
+  }
+}
+
 @media (max-width: 600px) {
   .hero {
     padding: 60px 15px;
