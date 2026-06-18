@@ -163,3 +163,9 @@ main {
   margin-top: 10px;
   line-height: 1.6;
 }
+@media (max-width: 767px) {
+  .hero {
+    min-height: 55vh;
+    background-position: right center;
+  }
+}
