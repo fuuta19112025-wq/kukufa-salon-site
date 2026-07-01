@@ -491,6 +491,10 @@ footer a {
   .hero {
     padding: 60px 15px;
   }
+  .hero-logo {
+    max-width: 160px; /* 220pxから「160px」に少し小さくしてみたよ */
+    margin-bottom: 25px; /* 下の文字との隙間も、スマホに合わせて少し狭く調整 */
+  } 
   .hero-copy {
     font-size: 1.2rem;
   }
