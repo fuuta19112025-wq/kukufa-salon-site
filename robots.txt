@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://fuuta19112025-wq.github.io/kukufa-salon-site/sitemap.xml
